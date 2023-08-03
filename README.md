@@ -1,6 +1,6 @@
 # Tour de France API
 
-Die Tour de France API ist ein kleines Projekt, welches Bewerbern die Möglichkeit gibt zu zeigen wie sie eine bei uns übliche Aufgabenstellung mittels Spring Boot lösen.
+Die Tour de France API ist ein kleines Projekt, das Bewerbern die Möglichkeit gibt zu zeigen wie sie eine, für uns übliche Aufgabenstellung, mit Spring Boot lösen würden.
 
 ## Aufgabenstellung
 
