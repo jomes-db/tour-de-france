@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
-    title: TdF API
-    description: Tour de France API
+    title: Tour the France API
+    description: API that delivers Data about the Tour de France
     version: 1.0.0
 servers:
     -   url: 'https://localhost:8080'
