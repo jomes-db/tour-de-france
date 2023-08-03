@@ -1,0 +1,61 @@
+openapi: 3.0.3
+info:
+    title: TdF API
+    description: Tour de France API
+    version: 1.0.0
+servers:
+    -   url: 'https://localhost:8080'
+tags:
+    -   name: riders
+        description: "An API to retrieve informations about Tour de France riders"
+paths:
+    '/riders':
+        get:
+            tags:
+                - riders
+            parameters:
+                -   name: year
+                    in: query
+                    description: "limits the results to the participants of the given year"
+                    required: false
+                    schema:
+                        type: number
+            responses:
+                200:
+                    description: List of all riders
+                    content:
+                        'application/json':
+                            schema:
+                                type: array
+                                items:
+                                    $ref: '#/components/schemas/rider'
+components:
+    schemas:
+        rider:
+            required:
+                - id
+                - name
+                - team
+                - numberOfParticipations
+                - bestResult
+            properties:
+                id:
+                    type: string
+                    description: "UUID that identifies a rider"
+                    example: "550e8400-e29b-11d4-a716-446655440000"
+                name:
+                    type: string
+                    description: "The riders name"
+                    example: "Tadej Pogacar"
+                team:
+                    type: string
+                    description: "The riders current team name"
+                    example: "UAE Team Emirates"
+                numberOfParticipations:
+                    type: number
+                    description: "Number of times the rider participated at the Tour de France"
+                    example: 3
+                bestResult:
+                    type: number
+                    description: "The riders best ranking to the date"
+                    example: 1
