@@ -4,7 +4,8 @@ Die Tour de France API ist ein kleines Projekt, das Bewerbern die Möglichkeit g
 
 ## Aufgabenstellung
 
-Implementiere den Web Service, der die [Tour de France API Spezifikation](docs/tour-de-france.yaml) erfüllt und nutze dazu die in der [Ergebnis-Liste](src/resources/static/tdf_results.csv) gegebenen
+Implementiere den Web Service, der die [Tour de France API Spezifikation](docs/tour-de-france.yaml) erfüllt und nutze dazu die in der [Ergebnis-Liste](src/main/resources/static/tdf_results.csv)
+gegebenen
 Daten.
 
 ## Nützliche Links
